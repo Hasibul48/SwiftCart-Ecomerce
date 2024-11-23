@@ -6,7 +6,7 @@ function Catagories() {
 
     return (
         <>
-            <div className="mb-5 ">
+            <div className="mb-[-50px]">
                 <h2 className='text-2xl text-center text-gray-600 font-serif font-bold md:text-3xl lg:text-4xl'>Product Categories</h2>
                 <img className='mt-[-70px] opacity-40 mx-auto' src="underline.png" alt="" />
             </div>

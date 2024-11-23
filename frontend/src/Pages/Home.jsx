@@ -1,6 +1,8 @@
 import React from 'react'
 import Carousal from '../Components/Carousal'
 import Catagories from '../Components/Catagories'
+import TrendingProducts from '../Components/TrendingProducts'
+
 
 function Home() {
     return (
@@ -11,6 +13,12 @@ function Home() {
             <br />
             <br />
             <Catagories />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <TrendingProducts />
         </div>
     )
 }
