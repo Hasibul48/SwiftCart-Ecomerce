@@ -10,6 +10,7 @@ const showingBlogs = BlogsData.slice(0, 9).map((blog, index) => (
         title={blog.title}
         desc={blog.desc}
         date={blog.date}
+        fullBlog={blog.fullPost}
     />))
 function Blogs() {
     console.log(BlogsData.length)
