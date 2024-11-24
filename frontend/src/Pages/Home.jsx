@@ -3,6 +3,7 @@ import Carousal from '../Components/Carousal'
 import Catagories from '../Components/Catagories'
 import TrendingProducts from '../Components/TrendingProducts'
 import Blogs from '../Components/Blogs'
+import ContactForm from '../Components/ContactForm'
 
 
 function Home() {
@@ -26,6 +27,10 @@ function Home() {
             <br />
             <br />
             <Blogs />
+            <br />
+            <br />
+            <br />
+            <ContactForm />
         </div>
     )
 }
