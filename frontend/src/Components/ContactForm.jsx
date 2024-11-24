@@ -25,8 +25,8 @@ function ContactForm() {
                     <label htmlFor="name">Your Message:</label>
                     <textarea name='message' className='rounded-lg border-red-200 bg-red-50 h-24 mt-1' placeholder='Ex: enter your own message with details.....' />
                 </div>
-                <Button gradientDuoTone="tealToLime" className='mx-auto my-8'>Submit My Informations
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 ml-3 my-auto">
+                <Button gradientDuoTone="tealToLime" className='mx-auto my-8  group'>Submit My Informations
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 ml-3 my-auto group-hover:text-red-600 transition-all">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
                     </svg>
 
