@@ -4,6 +4,7 @@ import Catagories from '../Components/Catagories'
 import TrendingProducts from '../Components/TrendingProducts'
 import Blogs from '../Components/Blogs'
 import ContactForm from '../Components/ContactForm'
+import DealsOfTheMonth from '../Components/DealsOfMonths'
 
 
 function Home() {
@@ -23,14 +24,18 @@ function Home() {
             <TrendingProducts />
             <br />
             <br />
+
+            <DealsOfTheMonth />
             <br />
             <br />
             <br />
+
             <Blogs />
             <br />
             <br />
             <br />
             <ContactForm />
+
         </div>
     )
 }
