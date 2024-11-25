@@ -10,7 +10,7 @@ function TrendingProducts() {
     const showingProducts = []
 
     for (let i = 0; i <= 11; i++) {
-        showingProducts.push(<SingleProductCard title={productsData[i].title} name={productsData[i].name} imgURL={productsData[i].imgURL} previousPrice={productsData[i].previousPrice} salePrice={productsData[i].salePrice} category={productsData[i].category} rating={productsData[i].rating} desc={productsData[i].description} />)
+        showingProducts.push(<SingleProductCard title={productsData[i].title} name={productsData[i].name} imgURL={productsData[i].imgURL} previousPrice={productsData[i].previousPrice} salePrice={productsData[i].salePrice} category={productsData[i].category} rating={productsData[i].rating} desc={productsData[i].description} key={i} />)
     }
     return (
         <>

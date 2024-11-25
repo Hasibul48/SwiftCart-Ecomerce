@@ -5,14 +5,14 @@ function DealsOfTheMonth() {
     return (
         <div className="bg-gray-50 py-10">
             {/* Deals of the Month Section */}
-            <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+            <div className="max-w-7xl mx-auto md:px-12 lg:px-16">
                 <div className="bg-pink-100 rounded-lg p-6 md:p-10 flex flex-col md:flex-row items-center gap-6">
                     {/* Image Section */}
-                    <div className="flex-shrink-0 w-1/2">
+                    <div className="flex-shrink-0 md:w-1/2">
                         <img
                             src="https://images.pexels.com/photos/2460488/pexels-photo-2460488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             alt="Deal of the Month"
-                            className="rounded-lg h-96 mx-auto"
+                            className="rounded-lg h-96 mx-auto object-cover"
                         />
                     </div>
 
@@ -25,7 +25,7 @@ function DealsOfTheMonth() {
                             Deals Of This Month
                         </h2>
                         <p className="text-gray-600 mt-4">
-                            Our Women’s Fashion Deals of the Month are here to make your style dreams a reality without breaking the bank. Discover a curated collection of exquisite clothing, accessories, and footwear, all handpicked to elevate your wardrobe.
+                            Our Men’s Fashion Deals of the Month are here to make your style dreams a reality without breaking the bank. Discover a curated collection of exquisite clothing, accessories, and footwear, all handpicked to elevate your wardrobe.
                         </p>
 
                         {/* Countdown Timer */}

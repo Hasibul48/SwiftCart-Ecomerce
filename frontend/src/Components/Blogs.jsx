@@ -13,7 +13,6 @@ const showingBlogs = BlogsData.slice(0, 9).map((blog, index) => (
         fullBlog={blog.fullPost}
     />))
 function Blogs() {
-    console.log(BlogsData.length)
     return (
         <div className='container mx-auto'>
             <div className="mb-[-30px]">
