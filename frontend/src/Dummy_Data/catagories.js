@@ -1,79 +1,94 @@
 const categories = [
     {
-        categoryName: 'Dress',
-        imgURL: 'https://images.pexels.com/photos/5709662/pexels-photo-5709662.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/dress'
-    },
-    {
-        categoryName: 'Shoes',
-        imgURL: 'https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/shoes'
+        categoryName: 'Clothing',
+        categoryDescription: 'Discover stylish clothing for every occasion, offering both comfort and elegance.',
+        imgURL: 'https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg',
+        path: '/category/clothing',
     },
     {
         categoryName: 'Accessories',
-        imgURL: 'https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/accessories'
+        categoryDescription: 'Elevate your outfit with our wide selection of fashionable accessories.',
+        imgURL: 'https://images.pexels.com/photos/3762875/pexels-photo-3762875.jpeg',
+        path: '/category/accessories',
     },
     {
-        categoryName: 'Watches',
-        imgURL: 'https://images.pexels.com/photos/3829441/pexels-photo-3829441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        path: '/watches'
+        categoryName: 'Electronics',
+        categoryDescription: 'Stay ahead with innovative electronics, from gadgets to smart devices.',
+        imgURL: 'https://images.pexels.com/photos/3394658/pexels-photo-3394658.jpeg',
+        path: '/category/electronics',
     },
     {
-        categoryName: 'Bags',
-        imgURL: 'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=600',
-        path: '/bags'
+        categoryName: 'Footwear',
+        categoryDescription: 'Step into style and comfort with our premium footwear collection.',
+        imgURL: 'https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg',
+        path: '/category/footwear',
+    },
+    {
+        categoryName: 'Sports & Fitness',
+        categoryDescription: 'Gear up for your active lifestyle with top-notch sports and fitness essentials.',
+        imgURL: 'https://images.pexels.com/photos/2923151/pexels-photo-2923151.jpeg',
+        path: '/category/sports-fitness',
+    },
+    {
+        categoryName: 'Home Decor',
+        categoryDescription: 'Transform your space with elegant and stylish home decor items.',
+        imgURL: 'https://images.pexels.com/photos/1052190/pexels-photo-1052190.jpeg',
+        path: '/category/home-decor',
+    },
+    {
+        categoryName: 'Home Appliances',
+        categoryDescription: 'Upgrade your home with the latest and most efficient appliances.',
+        imgURL: 'https://images.pexels.com/photos/3184187/pexels-photo-3184187.jpeg',
+        path: '/category/home-appliances',
+    },
+    {
+        categoryName: 'Beauty',
+        categoryDescription: 'Discover a range of beauty products to enhance your natural glow.',
+        imgURL: 'https://images.pexels.com/photos/3823077/pexels-photo-3823077.jpeg',
+        path: '/category/beauty',
+    },
+    {
+        categoryName: 'Toys & Games',
+        categoryDescription: 'Bring joy to kids of all ages with our fun and educational toys and games.',
+        imgURL: 'https://images.pexels.com/photos/2665865/pexels-photo-2665865.jpeg',
+        path: '/category/toys-games',
     },
     {
         categoryName: 'Jewelry',
-        imgURL: 'https://images.pexels.com/photos/2856715/pexels-photo-2856715.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/jewelry'
+        categoryDescription: 'Add elegance to your look with our exquisite collection of jewelry.',
+        imgURL: 'https://images.pexels.com/photos/1191531/pexels-photo-1191531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        path: '/category/jewelry',
     },
     {
-        categoryName: 'Sunglasses',
-        imgURL: 'https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/sunglasses'
+        categoryName: 'Furniture',
+        categoryDescription: 'Browse our stylish and functional furniture to enhance your living space.',
+        imgURL: 'https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        path: '/category/furniture',
     },
     {
-        categoryName: 'Perfumes',
-        imgURL: 'https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/perfumes'
+        categoryName: 'Books',
+        categoryDescription: 'Explore a wide selection of books for all ages and interests.',
+        imgURL: 'https://images.pexels.com/photos/2559641/pexels-photo-2559641.jpeg',
+        path: '/category/books',
     },
     {
-        categoryName: 'Makeup',
-        imgURL: 'https://images.pexels.com/photos/9219006/pexels-photo-9219006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        path: '/makeup'
+        categoryName: 'Automotive',
+        categoryDescription: 'Find high-quality automotive accessories for your vehicle.',
+        imgURL: 'https://images.pexels.com/photos/3030377/pexels-photo-3030377.jpeg',
+        path: '/category/automotive',
     },
     {
-        categoryName: 'Skincare',
-        imgURL: 'https://images.pexels.com/photos/3373745/pexels-photo-3373745.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/skincare'
+        categoryName: 'Groceries',
+        categoryDescription: 'Shop for fresh and quality groceries to keep your kitchen stocked.',
+        imgURL: 'https://images.pexels.com/photos/1281729/pexels-photo-1281729.jpeg',
+        path: '/category/groceries',
     },
     {
-        categoryName: 'Sportswear',
-        imgURL: 'https://images.pexels.com/photos/2923151/pexels-photo-2923151.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/sportswear'
+        categoryName: 'Pet Supplies',
+        categoryDescription: 'Take care of your furry friends with premium pet supplies and accessories.',
+        imgURL: 'https://images.pexels.com/photos/3156901/pexels-photo-3156901.jpeg',
+        path: '/category/pet-supplies',
     },
-    {
-        categoryName: 'Formal Wear',
-        imgURL: 'https://images.pexels.com/photos/1336872/pexels-photo-1336872.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/formalwear'
-    },
-    {
-        categoryName: 'Casual Wear',
-        imgURL: 'https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/casualwear'
-    },
-    {
-        categoryName: 'Kids Wear',
-        imgURL: 'https://images.pexels.com/photos/8613320/pexels-photo-8613320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-        path: '/kidswear'
-    },
-    {
-        categoryName: 'Winter Wear',
-        imgURL: 'https://images.pexels.com/photos/326240/pexels-photo-326240.jpeg?auto=compress&cs=tinysrgb&w=800',
-        path: '/winterwear'
-    }
 ];
 
 export default categories;

@@ -21,7 +21,7 @@ function Navbar() {
 
                 {/* Center Logo */}
                 <div className="text-2xl font-bold text-gray-900 flex justify-center items-center">
-                    <img src="SwiftCart.png" className="size-7 mr-1" alt="" />
+                    <img src="/SwiftCart.png" className="size-7 mr-1" alt="" />
                     SwiftCart<span className="text-red-500">.</span>
                 </div>
 

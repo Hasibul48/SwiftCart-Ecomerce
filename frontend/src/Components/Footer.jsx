@@ -13,7 +13,7 @@ function FooterComponent() {
                         <div>
                             <Footer.Brand
                                 href="/"
-                                src="SwiftCart.png"
+                                src="/SwiftCart.png"
                                 alt="Logo"
                                 name="SwiftCart"
                             />

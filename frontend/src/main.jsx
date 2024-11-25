@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import App from './App.jsx'
 import Home from './Pages/Home.jsx'
 import Page404 from './Pages/Page404.jsx';
+import CategoryPage from './Pages/CategoryPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         path: '*',
         element: <Page404 />
       },
+      {
+        path: "/category/:categoryName",
+        element: <CategoryPage />
+      }
     ]
   },
 ]);

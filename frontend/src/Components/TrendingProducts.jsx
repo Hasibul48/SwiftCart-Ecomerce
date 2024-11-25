@@ -1,7 +1,7 @@
 import React from 'react'
 import SingleProductCard from './SingleProductCard'
 
-import productsData from '../Dummy_Data/Products'
+import productsData from '../Dummy_Data/products';
 
 import { Button } from 'flowbite-react'
 
