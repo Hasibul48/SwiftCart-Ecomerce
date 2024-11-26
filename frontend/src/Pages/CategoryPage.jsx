@@ -13,7 +13,7 @@ function CategoryPage() {
     useEffect(() => {
         // Find the category details from categoriesData
         const category = categoriesData.find(
-            (cat) => cat.categoryName.toLowerCase().replace(/[\s.,&_]+/g, '-') === categoryName.toLowerCase().replace(/[\s.,&_]+/g, '-')
+            (cat) => cat.categoryName.toLowerCase().replace(/[\s]+/g, '-') === categoryName
         );
 
         if (category) {
@@ -23,7 +23,7 @@ function CategoryPage() {
         // Filter products for the selected category
         const filteredData = productsData.filter(
             (product) =>
-                product.category.toLowerCase().replace(/[\s.,&_]+/g, '-') === categoryName.toLowerCase().replace(/[\s.,&_]+/g, '-')
+                product.category.toLowerCase().replace(/[\s]+/g, '-') === categoryName
         );
 
         setFilteredProducts(filteredData);
@@ -49,10 +49,26 @@ function CategoryPage() {
                 <h2 className='text-2xl text-center text-gray-600 font-serif font-bold md:text-3xl lg:text-4xl'>All Products releted to {categoryDetails.categoryName || "__"}</h2>
                 <img className='mt-[-70px] opacity-40 mx-auto' src="/underline.png" alt="" />
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 container mx-auto'>
-                {
-                    filteredProducts.length > 0 ? (filteredProducts.map((item, i) => <SingleProductCard title={item.title} name={item.name} imgURL={item.imgURL} previousPrice={item.previousPrice} salePrice={item.salePrice} category={item.category} rating={item.rating} desc={item.description} key={i} />)) : "No Products Matched with the Category"
-                }
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 container mx-auto">
+                {filteredProducts.length > 0 ? (
+                    filteredProducts.map((item, i) => (
+                        <SingleProductCard
+                            title={item.title}
+                            name={item.name}
+                            imgURL={item.imgURL}
+                            previousPrice={item.previousPrice}
+                            salePrice={item.salePrice}
+                            category={item.category}
+                            rating={item.rating}
+                            desc={item.description}
+                            key={i}
+                        />
+                    ))
+                ) : (
+                    <div className="col-span-full flex justify-center items-center">
+                        <h2 className="text-center mb-6">Sorry, No products found matching the category</h2>
+                    </div>
+                )}
             </div>
 
         </>

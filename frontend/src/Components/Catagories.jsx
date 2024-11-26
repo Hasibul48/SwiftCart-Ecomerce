@@ -11,7 +11,7 @@ function Catagories() {
                 <img className='mt-[-70px] opacity-40 mx-auto' src="underline.png" alt="" />
             </div>
             <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10 px-8'>
-                {categories.map((item) => <Category key={item.path} categoryName={item.categoryName} path={item.path} imgURL={item.imgURL} />)}
+                {categories.map((item) => <Category key={item.path} categoryName={item.categoryName} path={`/category/${item.categoryName.toLowerCase().replace(/[\s]+/g, '-')}`} imgURL={item.imgURL} />)}
             </div>
         </>
     )
