@@ -24,12 +24,10 @@ function Home() {
             <TrendingProducts />
             <br />
             <br />
-
             <DealsOfTheMonth />
             <br />
             <br />
             <br />
-
             <Blogs />
             <br />
             <br />

@@ -7,6 +7,7 @@ import App from './App.jsx'
 import Home from './Pages/Home.jsx'
 import Page404 from './Pages/Page404.jsx';
 import CategoryPage from './Pages/CategoryPage.jsx';
+import SearchPage from './Pages/SearchPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/category/:categoryName",
         element: <CategoryPage />
+      },
+      {
+        path: "/search",
+        element: <SearchPage />
       }
     ]
   },

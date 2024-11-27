@@ -30,6 +30,7 @@ function SingleProductCard({ title, name, imgURL, previousPrice, salePrice, cate
                         {rating} / 5
                     </span>
                 </div>
+                <p className='font-semibold mb-3'>Category: {category}</p>
                 <div className="flex items-center justify-between">
                     <div>
                         <span className="text-3xl font-bold text-gray-900 dark:text-white">{salePrice}$</span>
