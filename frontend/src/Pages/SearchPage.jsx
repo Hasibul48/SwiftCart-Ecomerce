@@ -18,6 +18,10 @@ function SearchPage() {
     }
     return (
         <>
+            <br />
+            <br />
+            <br />
+            <br />
             <section className="bg-pink-100 py-16 container mx-auto rounded-xl mb-14">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4 capitalize">
@@ -29,8 +33,8 @@ function SearchPage() {
                     </p>
                 </div>
             </section>
-            <div className='container mx-auto justify-center flex mb-20'>
-                <input value={searchQuery} onChange={handleSearch} className="w-1/2 border-red-400 rounded-full" type="text" placeholder='Your search query goes here.....' />
+            <div className='container mx-auto justify-center flex mb-20 px-6'>
+                <input value={searchQuery} onChange={handleSearch} className="w-full lg:w-1/2 border-red-400 rounded-full" type="text" placeholder='Your search query goes here.....' />
                 <Button onClick={handleSearch} className='ml-[-40px]' color="purple" pill>
                     Search
                 </Button>

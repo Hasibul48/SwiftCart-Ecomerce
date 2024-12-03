@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 function Page404() {
     return (
         <section className="bg-white font-serif">
+            <br />
+            <br />
+            <br />
             <div className="container mx-auto my-28">
                 <div className="flex justify-center">
                     <div className="text-center">

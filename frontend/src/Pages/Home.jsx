@@ -10,6 +10,10 @@ import DealsOfTheMonth from '../Components/DealsOfMonths'
 function Home() {
     return (
         <div>
+            <br />
+            <br />
+            <br />
+
             <Carousal />
             <br />
             <br />

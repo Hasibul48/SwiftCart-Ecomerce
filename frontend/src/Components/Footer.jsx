@@ -5,12 +5,13 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-
 
 function FooterComponent() {
     return (
-        <div className="shadow-md border">
+        <div className="shadow-md border mt-12">
             <Footer container>
                 <div className="w-full">
-                    <div className="flex flex-wrap justify-between items-center sm:flex-row">
+                    {/* Top Section */}
+                    <div className="flex flex-wrap justify-between items-center space-y-6 sm:space-y-0 sm:flex-row">
                         {/* Brand */}
-                        <div>
+                        <div className="w-full sm:w-auto flex md:justify-center justify-start">
                             <Footer.Brand
                                 href="/"
                                 src="/SwiftCart.png"
@@ -20,7 +21,7 @@ function FooterComponent() {
                         </div>
 
                         {/* Links */}
-                        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6 mt-4 sm:mt-0">
+                        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8 w-full sm:w-auto">
                             <div>
                                 <Footer.Title title="About" />
                                 <Footer.LinkGroup col>
@@ -48,15 +49,23 @@ function FooterComponent() {
                     {/* Divider */}
                     <Footer.Divider />
 
-                    {/* Social Icons */}
-                    <div className="flex justify-between items-center w-full mt-4 sm:mt-0">
+                    {/* Bottom Section */}
+                    <div className="flex flex-wrap items-center justify-between space-y-4 sm:space-y-0 w-full">
                         <Footer.Copyright
-                            className="z-10"
                             href="/"
                             by="SwiftCart™"
                             year={new Date().getFullYear()}
                         />
-                        <div className="flex space-x-6 z-10">
+                        <div className="text-center text-sm opacity-70">
+                            Copyright {new Date().getFullYear()} || All rights reserved || Made by{" "}
+                            <Link
+                                className="underline hover:text-purple-950 transition-colors hover:underline-offset-2"
+                                to={"https://hmhasibul.netlify.app"}
+                            >
+                                Hasibul Islam
+                            </Link>
+                        </div>
+                        <div className="flex space-x-6">
                             <Link to="/" className="hover:text-cyan-500 transition-colors">
                                 <BsFacebook size={20} />
                             </Link>
@@ -73,11 +82,6 @@ function FooterComponent() {
                                 <BsDribbble size={20} />
                             </Link>
                         </div>
-                    </div>
-
-                    {/* Footer Note */}
-                    <div className="text-center text-sm opacity-70 mt-6 md:mt-[-20px]">
-                        Copyright {new Date().getFullYear()} || All rights reserved || Made by <Link className="underline hover:text-purple-950 transition-colors hover:underline-offset-2" to={'https://hmhasibul.netlify.app'}>Hasibul Islam</Link>
                     </div>
                 </div>
             </Footer>
