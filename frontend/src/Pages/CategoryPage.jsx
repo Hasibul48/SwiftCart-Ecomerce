@@ -29,8 +29,18 @@ function CategoryPage() {
         setFilteredProducts(filteredData);
     }, [categoryName]);
 
+
+    //Automatic scrolling to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
+            <br />
+            <br />
+            <br />
+            <br />
             {/* Category Banner */}
             <section className="bg-pink-100 py-16 container mx-auto rounded-xl mb-14">
                 <div className="max-w-4xl mx-auto text-center">

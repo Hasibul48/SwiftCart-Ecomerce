@@ -60,7 +60,7 @@ function FooterComponent() {
                             Copyright {new Date().getFullYear()} || All rights reserved || Made by{" "}
                             <Link
                                 className="underline hover:text-purple-950 transition-colors hover:underline-offset-2"
-                                to={"https://hmhasibul.netlify.app"}
+                                to={"https://hmhasibul.vercel.app"}
                             >
                                 Hasibul Islam
                             </Link>
