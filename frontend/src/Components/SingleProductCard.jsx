@@ -14,7 +14,7 @@ function SingleProductCard({ title, name, imgURL, previousPrice, salePrice, cate
 
     return (
         <div
-            className="max-w-sm hover:shadow-xl transition-shadow mx-auto p-0 rounded-3xl border-2 overflow-hidden  group">
+            className="max-w-sm hover:shadow-xl transition-shadow mx-auto p-0 rounded-3xl border-2 overflow-hidden h-fit  group">
             <img className='h-72 object-cover p-0 w-screen group-hover:scale-105 transition-transform duration-300' src={imgURL} alt={title} />
             <div className="p-6">
                 <Link to={'*'}>
